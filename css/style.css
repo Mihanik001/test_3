@@ -1,0 +1,95 @@
+*{
+    font-family: 'Comfortaa', sans-serif;
+}
+html,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    color: #5c5b5b;
+}
+body {
+    background: rgba(3, 39, 66, 0.6);
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+/*HEADER*/
+header {
+    background: rgba(3, 39, 66, 0.771);
+    height: 95px;
+}
+header *{
+    color: #ffffff;
+}
+header h1 a:hover {
+    margin-top: 10px;
+}
+header ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+header ul li{
+    float: left;
+    position: relative;
+}
+header ul li a{
+    display: block;
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding: 20px;
+}
+.ie #portfolio .row.items {
+	width: 1140px;
+}
+
+#portfolio .row.items {
+	max-width: 1200px;
+}
+
+#contact .row {
+	max-width: 784px;
+}
+#page-title .row {
+	max-width: 724px;
+}
+ul#nav {
+	min-height: 72px;
+	width: auto; 
+
+	/* left align the menu */
+	text-align: left;
+}
+ul#nav li {
+	position: relative;
+	list-style: none;
+	height: 72px;
+	display: inline-block;
+}
+ul#nav li a {
+	display: inline-block;
+	padding: 17px 12px;
+	line-height: 38px;
+	text-decoration: none;
+	color: #c0cdd1;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+ul#nav li a:hover {
+	color: white;
+}
+ul#nav li a:active {
+	background-color: transparent !important;
+}
+ul#nav li.current a {
+	background: #f26522;
+	color: white;
+}
