@@ -1,129 +1,35 @@
 <!doctype html>
 <html lang="en">
-    <head>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/a41f0f2494.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
-        <meta charset="utf-8">
-         <title>КрасАстро</title>
-         <meta name="description" content="">  
-         <meta name="author" content="">
-     
-         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-     
-        <link rel="stylesheet" href="css/base.css">
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/media-queries.css">         
-     
-         <script src="js/modernizr.js"></script>
-     
-     
-         <link rel="shortcut icon" href="h.png" >
-        <div id="preloader"> 
-            <div id="status">
-              <img src="images/loader.gif" height="60" width="60" alt="">
-              <div class="loader">Загрузка...</div>
-           </div>
-        </div>
-        
-        <header id="main-header">
-     
-            <div class="row header-inner">
-     
-               <div class="logo">
-                  <a class="smoothscroll" href="#hero">KрасАстро.</a>
-               </div>
-     
-               <nav id="nav-wrap">         
-                  
-                  <a class="mobile-btn" href="#nav-wrap" title="Show navigation">
-                      <span class='menu-text'>Показать меню</span>
-                      <span class="menu-icon"></span>
-                  </a>
-                  <a class="mobile-btn" href="#" title="Hide navigation">
-                      <span class='menu-text'>Спрятать меню</span>
-                      <span class="menu-icon"></span>
-                  </a>         
-     
-                  <ul id="nav" class="nav">
-                     <li class="current"><a class="smoothscroll" href="#hero">Главная.</a></li>
-                 <li><a class="smoothscroll" href="#portfolio">Альбомы.</a></li>
-                     <li><a class="smoothscroll" href="#about">О нас.</a></li>
-                     <li><a class="smoothscroll" href="#journal">Мероприятия.</a></li>	            
-                  </ul> 
-     
-               </nav> <!-- /nav-wrap -->	      
-     
-            </div> <!-- /header-inner -->
-     
-        </header> 
-     
-     
-        <!-- Hero
-        =================================================== -->
-        <section id="hero">	
-              
-             <div class="row hero-content">
-     
-                 <div class="twelve columns flex-container">
-     
-                    <div id="hero-slider" class="flexslider">
-     
-                        <ul class="slides">
-     
-                            <!-- Slide -->
-                            <li>
-                                <div class="flex-caption">
-                                     <h1>Привет, мы команда</h1>	
-                                     <p><a class="button stroke smoothscroll" href="#about">ССылка на что-то</a></p>																   
-                                 </div>						
-                            </li>
-     
-                            <!-- Slide -->
-                            <li>						
-                                 <div class="flex-caption">
-                                     <h1><i>Текст-рыба</i></h1>	
-                                     <p><a class="button stroke smoothscroll" href="#portfolio">See Our Works</a></p>									   
-                                 </div>					
-                            </li>
-     
-                            <!-- Slide -->
-                            <li>
-                                <div class="flex-caption">
-                                     <h1 >Текст-рыба&nbsp;<a class="smoothscroll" href="#portfolio" title=""></a><a class="smoothscroll" href="#contact" title=""></a> Обсуждения может помочь.</h1>
-                                     <p><a class="button stroke smoothscroll" href="#contact">ССЫЛКА НА ЧТО-ТО</a></p>										   
-                                 </div>
-                            </li>					              
-     
-                        </ul>
-     
-                    </div> <!-- .flexslider -->				   
-     
-               </div> <!-- .flex-container -->      
-     
-             </div> <!-- .hero-content -->	   
-     
-        </section> <!-- #hero -->
+    <link rel ="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
+    <title>KrasAstro</title>
+    </head>
   <body>
 <header class="container-fluid">
     <div class = "container">
         <div class = "row">
             <div class = "col-4">
-                <h1> <a href = "/">Astronomy blog</a></h1>
+                <h1> <a href = "/">KrasAstro</a></h1>
             </div>
-            <nav class = "col-8">
+            <nav class = "col-md-8">
                 <ul>
                     <li><a href = "#">Главная</a></li>
                     <li><a href = "#">О нас</a></li>
-                    <li><a href = "#">Наша деятельность</a></li>
                     <li><a href = "#">Фотоальбом</a></li>
-                    <li>
-                        <a href = "#">
-                            <i class = "fa fa-user">
-                            </i>
-                            Кабинет
-                        </a>
+                    <li><a href = "#"><i class = "fa fa-user"></i>Кабинет</a>
                         <ul>
                             <li><a href = "#">Админ панель</a></li>
-                            <li><a href = "#">Выход</a></li>
+                            <li><a href = "forma/index.html">Выход</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -132,6 +38,215 @@
     </div>
 </header>
 
+
+<!--начало карусельки-->
+<div class="container">
+  <div class="row">
+    <h2 class = "slider-title">Актуальное</h2>
+  </div>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-slide="carousel">
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/1.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption-hack carousel-caption  d-nd-block">
+              <h5><a href="#" >Первый слайд</a></h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/2.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption-hack carousel-caption d-nd-block">
+              <h5><a href="#" >Второй слайд</a></h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/3.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption-hack carousel-caption d-nd-block">
+              <h5><a href="#" >Третий слайд</a></h5>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+</div>
+<!--конец карусельки-->
+
+<!-- начало Main-->
+<div class="container">
+  <div class="content row">
+    <!--main content-->
+    <div class="main-content col-md-9 col-12">
+      <h2>Последние публикации</h2>
+
+      <div class="post row">
+        <div class="img col-12 col-md-4">
+          <img src="img/2.jpg" class="img-thumbnail" alt ="">
+        </div>
+        <div class="post_text col-12 col-md-8">
+          <h3>
+            <a href="#">Какая-нибудь прикольная статья на тему острономия...</a>
+          </h3>
+          <i class="far fa-user"> Имя автора</i>
+          <i class="far fa-calendar"> Dec 5, 2023</i>
+          <p class="preview-text">
+              Тут краткий отрывот из всего поста, очееень много текcта
+              Lorem impus 
+          </p>
+        </div>
+      </div>
+      <div class="post row">
+        <div class="img col-12 col-md-4">
+          <img src="img/1.jpg" class="img-thumbnail" alt ="" >
+        </div>
+        <div class="post_text col-12 col-md-8">
+          <h3>
+            <a href="#">Какая-нибудь прикольная статья на тему острономия</a>
+          </h3>
+          <i class="far fa-user"> Имя автора</i>
+          <i class="far fa-calendar"> Dec 5, 2023</i>
+          <p class="preview-text">
+            Тут краткий отрывот из всего поста, очееень много текса-
+          </p>
+        </div>
+      </div>
+      <div class="post row">
+        <div class="img col-12 col-md-4">
+          <img src="img/1.jpg" class="img-thumbnail" alt ="" >
+        </div>
+        <div class="post_text col-12 col-md-8">
+          <h3>
+            <a href="#">Какая-нибудь прикольная статья на тему острономия</a>
+          </h3>
+          <i class="far fa-user"> Имя автора</i>
+          <i class="far fa-calendar"> Dec 5, 2023</i>
+          <p class="preview-text">
+            Тут краткий отрывот из всего поста, очееень много текса-
+          </p>
+        </div>
+      </div>
+      <div class="post row">
+        <div class="img col-12 col-md-4">
+          <img src="img/1.jpg" class="img-thumbnail" alt ="" >
+        </div>
+        <div class="post_text col-12 col-md-8">
+          <h3>
+            <a href="#">Какая-нибудь прикольная статья на тему острономия</a>
+          </h3>
+          <i class="far fa-user"> Имя автора</i>
+          <i class="far fa-calendar"> Dec 5, 2023</i>
+          <p class="preview-text">
+            Тут краткий отрывот из всего поста, очееень много текса-
+          </p>
+        </div>
+      </div>
+      <div class="post row">
+        <div class="img col-12 col-md-4">
+          <img src="img/1.jpg" class="img-thumbnail" alt ="" >
+        </div>
+        <div class="post_text col-12 col-md-8">
+          <h3>
+            <a href="#">Какая-нибудь прикольная статья на тему острономия</a>
+          </h3>
+          <i class="far fa-user"> Имя автора</i>
+          <i class="far fa-calendar"> Dec 5, 2023</i>
+          <p class="preview-text">
+            Тут краткий отрывот из всего поста, очееень много текса-
+          </p>
+        </div>
+      </div>
+      <div class="post row">
+        <div class="img col-12 col-md-4">
+          <img src="img/1.jpg" class="img-thumbnail" alt ="" >
+        </div>
+        <div class="post_text col-12 col-md-8">
+          <h3>
+            <a href="#">Какая-нибудь прикольная статья на тему острономия</a>
+          </h3>
+          <i class="far fa-user"> Имя автора</i>
+          <i class="far fa-calendar"> Dec 5, 2023</i>
+          <p class="preview-text">
+            Тут краткий отрывот из всего поста, очееень много текса-
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--sidebar conntent-->
+    <div class="sidebar col-md-3 col-12">
+      <div class="section search">
+
+        <h3>Поиск</h3>
+        <form action="/" method="post">
+          <input type="text" name="search-term" class="tex-input" placeholder="Поиск...">
+        </form>
+      </div>
+      <div class="section topics">
+        <h3>Категории</h3>
+        <ul>
+          <li><a href="#">Вопросы</a></li>
+          <li><a href="#">Ответы</a></li>
+          <li><a href="#">Что-то</a></li>
+          <li><a href="#">Нечто</a></li>
+          <li><a href="#">Некто</a></li>
+        </ul>
+      </div>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+<!--конец Main-->
+<!--footer-->
+<div class="footer container-fluid">
+  <div class="footer-content container">
+    <div class="row">
+      <div class="footer-section about col-md-4 col-12">
+        <h3 class="logo-text">КрасАстро</h3>
+        <p>
+          Рассказываем для чего нам этот сайт
+        </p>
+        <div class = "contact">
+          <span><i class = "fas fa-phone"></i> &nbsp; номер телефона</span>
+          <span></a><i class = "fas fa-envelope"></i> &nbsp;  krasastro@gmail.com</span>          
+        </div>
+        <div class = "socials">
+          <a href = "https://t.me/KrasAstro"><i class="fab fa-telegram"></i></a>
+          <a href = "https://vk.com/krasastro"><i class="fab fa-vk"></i></a>
+        </div>
+      </div>
+      <div class = "footer-section links col-md-4 col-12">
+        <h3>Связанное</h3>
+        <br>
+        <ul>
+          <a href="#">
+            <li>События</li>
+          </a>
+          <a href="#">
+            <li>Команда</li>
+          </a>
+          <a href="#">
+            <li>Галлерея</li>
+          </a>
+          <a href="#">
+            <li>Что-то ещё</li>
+          </a>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      &copy; KrasAstro | Design by Mihanik
+    </div>
+  </div>
+</div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   
     </body>
